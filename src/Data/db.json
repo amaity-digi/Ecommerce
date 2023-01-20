@@ -1,0 +1,72 @@
+{
+    "categories":[
+        { "id": 1, "title": "Refrigerator" },
+        { "id": 2, "title": "Telivisions" },
+        { "id": 3, "title": "Mobiles" }
+
+    ],
+    "products":[
+        { "id": 1,
+         "cartId":1,
+         "title": "Haier 53 L 2 Star Direct-Cool Single Door Mini Refrigerator (HR-65KS, Black) " ,
+         "productcode":"BFFD3577",
+         "image":"Haier.jpg",
+         "price":8990,
+         "sku":"",
+         "description":"(HR-65KS, Black)",
+         "specs":{"dimensions":"177.5 x 54 x 54.5 cm(H x W x D)", "capacity":"309 litres"},
+         "features":"Smart inverter compressor: Unmatched performance, great savings and super silent operation",
+         "stock":20
+
+        },
+        { "id": 2,
+         "cartId":1,
+         "title": "LG 190 L 4 Star Inverter Direct-Cool Single Door Refrigerator (GL-D201ASCY, Scarlet Charm, Base stand with Drawer)- 2022 Model",
+         "productcode":"BFFD3577",
+         "image":"LG.webp",
+         "price":"16,490",
+         "sku":"",
+         "description":"The star rating changes are as per BEE guidelines on or before 1st Jan 2023",
+         "specs":{"dimensions":"187.5 x 64 x 44.5 cm(H x W x D)", "capacity":"190 litres"},
+         "features":"Energy Rating 4 Star: High energy efficiency",
+         "stock":40
+         },
+         { "id": 3,
+         "cartId":3,
+         "title": "HSamsung Galaxy S20 FE 5G (Cloud Mint, 8GB RAM, 128GB Storage) " ,
+         "productcode":"BD3577",
+         "image":"Samsung.webp",
+         "price":"29,990",
+         "sku":"",
+         "description":"5G Ready powered by Qualcomm Snapdragon 865 Octa-Core processor, 8GB RAM, 128GB internal memory expandable up to 1TB, Android 11.0 operating system and dual SIM",
+         "specs":{"dimensions":"6.5-inch(16.40 centimeters) Infinity-O Super AMOLED Display with 120Hz Refresh rate, 1080 x 2400 (FHD+) Resolution ", "capacity":"4500 mAh battery (Non -removable) with Super Fast Charging, FAst Wireless Charging & Finger Print sensor"},
+         "features":"Triple Rear Camera Setup - 12MP (Dual Pixel) OIS F1.8 Wide Rear Camera + 8MP OIS Tele Camera + 12MP Ultra Wide | 30X Space Zoom, Single Take & Night Mode | 32MP F2.2 Front Punch Hole Camera",
+         "stock":"89"
+        },
+        { "id": 4,
+        "cartId":3,
+        "title": "OnePlus 10T 5G (Jade Green, 8GB RAM, 128GB Storage)" ,
+        "productcode":"BD377",
+        "image":"oneplus.jpg",
+        "price":"49,999",
+        "sku":"",
+        "description":"Camera: 50MP Main Camera with Sony IMX766 and OIS, 8MP Ultrawide Camera with 120 degree FOV and 2MP macro lens with LED Flash; 16MP Front (Selfie) Camera with EIS support",
+        "specs":{"dimensions":"Display: 6.7 Inches; 120 Hz Fluid AMOLED Display with Corning Gorilla Glass; Resolution: 2412 X 1080 pixels; HDR 10+, sRGB, Display P3, 10-bit Color Depth", "capacity":"Battery & Charging: 4800 mAh with 150W SuperVOOC"},
+        "features":"Display Features: Image Sharpener, Video Color Enhancer, Screen Color Mode, Auto Brightness, Manual Brightness, Screen Color Mode, Bright HDR Video mode, Dark Mode, Screen Color Pro Mode",
+        "stock":"50"
+       },
+       { "id": 5,
+        "cartId":2,
+        "title": "Onida 80 cm (32 inches) HD Ready Smart LED Fire TV 32HIF3 (Black)" ,
+        "productcode":"BD37",
+        "image":"onida.jpg",
+        "price":"12,990",
+        "sku":"",
+        "description":"Resolution : HD Ready (1366x768) | Refresh Rate: 60 hertz | HDR 10 | Viewing angle : 178 Degrees wide",
+        "specs":{"dimensions":"Display: 6.7 Inches; 120 Hz Fluid AMOLED Display with Corning Gorilla Glass; Resolution: 2412 X 1080 pixels; HDR 10+, sRGB, Display P3, 10-bit Color Depth", "capacity":"Connectivity: Dual Band Wi-Fi | 3 HDMI ports to connect set top box, Blu-ray players, gaming console | 1 USB port to connect hard drives and other USB devices | Bluetooth 5.0 | Ethernet | Optical audio jack | 3.5mm earphone jack"},
+        "features":"Display: HD Ready | HDR 10 | Lucent Picture Engine | Amlogic 11th Gen",
+        "stock":"40"
+       }
+        
+    ]
+}

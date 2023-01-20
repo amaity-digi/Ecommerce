@@ -1,25 +1,69 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import axios from 'axios';
+import Category from './Components/Category';
+import Category_Product from './Components/Category_Product';
+
 
 function App() {
+  const [results,setResults]=useState([]);
+  const [products,setProducts]=useState([]);
+
+  const fetchData=async()=>{
+    const response=await axios.get("http://localhost:3000/categories");
+    setResults(response.data);
+  }
+  useEffect(()=>{
+    fetchData();
+  },[])
+
+  const handleCategoryClick=(id)=>{
+     const fetchProduct=async()=>{
+      const response=await axios.get("http://localhost:3000/products?cartId="+id);
+      console.log(response);
+      setProducts(response.data);
+  }
+    fetchProduct();
+  
+}
+
+  const renderCatagories=()=>{
+    return results.map(result =>
+      <Category key={result.id} id={result.id} title={result.title}
+           onCategoryClick={()=>{handleCategoryClick(result.id)}}/>
+    );
+     
+    }
+  
+    const renderProducts =()=>{
+      return products.map(p=>
+        <Category_Product {...p}>{p.title}</Category_Product>
+        )
+    }
+    
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <header>AMAZON</header>
+
+    <section>
+    <nav>
+      { results && renderCatagories()}
+    </nav>
+    <article>
+       <h1>products</h1>
+       { products && renderProducts()}
+    </article>
+    </section>
+
+    <footer>
+      footer
+    </footer>
+
+    
+    </>
   );
 }
+
 
 export default App;
